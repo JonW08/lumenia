@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produktbutikk</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+        header {
+            background-color: #0073e6;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+        }
+        .product {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .product-card {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            width: 300px;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .product-card img {
+            max-width: 100%;
+            height: auto;
+            border-bottom: 1px solid #ddd;
+            margin-bottom: 15px;
+        }
+        .product-card h3 {
+            margin: 0 0 10px;
+        }
+        .product-card p {
+            color: #555;
+        }
+        .product-card button {
+            background-color: #0073e6;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .product-card button:hover {
+            background-color: #005bb5;
+        }
+        #cart {
+            margin-top: 30px;
+            padding: 20px;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        #cart ul {
+            list-style: none;
+            padding: 0;
+        }
+        #cart ul li {
+            margin-bottom: 10px;
+        }
+        #checkout {
+            margin-top: 15px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        #checkout:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Velkommen til Produktbutikken</h1>
+    </header>
+
+    <div class="container">
+        <div class="product">
+            <div class="product-card" data-product-name="Produkt A" data-product-price="100">
+                <img src="https://via.placeholder.com/300" alt="Produkt A">
+                <h3>Produkt A</h3>
+                <p>Pris: 100 NOK</p>
+                <button class="add-to-cart">Legg i handlekurv</button>
+            </div>
+            <div class="product-card" data-product-name="Produkt B" data-product-price="200">
+                <img src="https://via.placeholder.com/300" alt="Produkt B">
+                <h3>Produkt B</h3>
+                <p>Pris: 200 NOK</p>
+                <button class="add-to-cart">Legg i handlekurv</button>
+            </div>
+        </div>
+
+        <div id="cart">
+            <h2>Handlekurv</h2>
+            <ul></ul>
+            <p>Total: <span id="total-price">0</span> NOK</p>
+            <button id="checkout">Kjøp</button>
+        </div>
+    </div>
+
+    <script>
+        const cart = [];
+
+        document.querySelectorAll('.add-to-cart').forEach(button => {
+            button.addEventListener('click', () => {
+                const card = button.parentElement;
+                const productName = card.getAttribute('data-product-name');
+                const productPrice = parseInt(card.getAttribute('data-product-price'));
+
+                cart.push({ name: productName, price: productPrice });
+                updateCart();
+            });
+        });
+
+        function updateCart() {
+            const cartList = document.querySelector('#cart ul');
+            const totalPriceElement = document.querySelector('#total-price');
+
+            cartList.innerHTML = '';
+            let totalPrice = 0;
+
+            cart.forEach(product => {
+                const li = document.createElement('li');
+                li.textContent = `${product.name} - ${product.price} NOK`;
+                cartList.appendChild(li);
+                totalPrice += product.price;
+            });
+
+            totalPriceElement.textContent = totalPrice;
+        }
+
+        document.querySelector('#checkout').addEventListener('click', () => {
+            if (cart.length === 0) {
+                alert('Handlekurven er tom!');
+            } else {
+                alert('Takk for ditt kjøp!');
+                cart.length = 0;
+                updateCart();
+            }
+        });
+    </script>
+</body>
+</html>
