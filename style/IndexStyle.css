@@ -110,6 +110,9 @@ a{
     .navbar {
         font-size: xx-small;
     }
+    .grid{
+        grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+    }
     #fagoversikt {
         margin-inline: 30%;
         
