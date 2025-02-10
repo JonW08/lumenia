@@ -106,20 +106,30 @@ a{
     text-decoration: none;
     color: #000000;
 }
+ .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        
+    }
 @media (max-width: 568px) {
     .navbar {
         font-size: xx-small;
     }
     .grid{
         grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+        height: 400px;
+        
     }
+    .card img{
+        
+    height:200px;
+    width:80%
+    
+    }
+    
     #fagoversikt {
         margin-inline: 30%;
         
     }
-    .grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        
-    }
+   
 }
