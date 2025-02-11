@@ -73,14 +73,7 @@ a:hover{
     align-items: center;
     gap: 20px;
 }
-@media (max-width: 400px) {
-    .grid {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        width: 50px;
-    }
-}
+
 
 .card {
     border: 2px solid #ddd;
@@ -124,29 +117,14 @@ a{
     color: #000000;
 }
  .grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: x;
     }
+
 @media (max-width: 568px) {
     .navbar {
         font-size: xx-small;
     }
-    .grid{
-        grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
-        height: 400px;
-        
-    }
-    .card img{
-        
-    height:200%;
-    width:80%
-    
-    }
-    
-    #fagoversikt {
-        margin-inline: 30%;
-        
-    }
-   
 }
