@@ -10,6 +10,32 @@ body {
     padding-inline: 10%;
     
 }
+
+
+
+.badge:after{
+
+    content:attr(data-value);
+
+    font-size:12px;
+
+    color: #fff;
+
+    background: red;
+
+    border-radius:50%;
+
+    padding: 0 5px;
+
+    position:relative;
+
+    left:-8px;
+
+    top:-10px;
+
+    opacity:0.9;
+
+}
 h1{
     text-align: center;
     color: #000000;
@@ -26,7 +52,7 @@ h1{
     background-color: #ffffff;
     color: #000000;
     
-    margin-top: -4px;
+    margin-top: -2%;
     box-shadow: 2px 3px 10px #69848e;
 
 
@@ -66,13 +92,7 @@ a:hover{
 }
 
 
-.grid {
-    display: grid;
-    
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    align-items: center;
-    gap: 20px;
-}
+
 
 
 .card {
@@ -107,11 +127,13 @@ p{
 }
 
 .card img {
-    width: 100%;
+    width: 300px;
     height: 400px;
     
     object-fit: cover;
 }
+
+
 a{
     text-decoration: none;
     color: #000000;
@@ -120,11 +142,17 @@ a{
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        gap: x;
+        gap: 10px;
     }
 
 @media (max-width: 568px) {
     .navbar {
         font-size: xx-small;
+    }
+    .card img {
+        width: 200px;
+        height: 300px;
+        
+        object-fit: cover;
     }
 }

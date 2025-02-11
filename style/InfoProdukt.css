@@ -58,25 +58,97 @@ a:hover{
     margin-inline: 20%;
     border-radius: 4px;
 }
+
+.badge:after{
+
+    content:attr(data-value);
+
+    font-size:12px;
+
+    color: #fff;
+
+    background: red;
+
+    border-radius:50%;
+
+    padding: 0 5px;
+
+    position:relative;
+
+    left:-8px;
+
+    top:-10px;
+
+    opacity:0.9;
+
+}
 .produktinfo img{
-   width: 40%;
-
+   width: 300px;
+   height: 400px;
+   
 }
-@media (max-width: 768px) {
-    .produktinfo {
-        font-size: xx-small;
-    }
-}
+.knapper{
+    display: flex;
+    gap: 5px;
+ 
+    
 
-.produktinfo button{
+    
+}
+.knapper button{
+    flex:1;
     background-color: #89aab6;
     color: #ffffff;
     border: none;
-    padding: 10px;
     border-radius: 4px;
-    cursor: pointer;
     
 }
+
+@media (max-width: 768px) {
+    .produktinfo {
+        font-size: 8px;
+    }
+    .produktinfo img{
+        width: 150px;
+        height: 200px;
+        
+     }
+     .produktinfo{
+        display: flex;
+        flex-direction: row;
+        gap:30px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        background-color: #ffffff;
+        box-shadow: 2px 3px 10px #69848e;
+        padding: 10px;
+        width: 80%;
+        margin-inline: 10%;
+        border-radius: 4px;
+    }
+    .navbar{
+        font-size: xx-small;
+    }
+    .knapper{
+        display: block;
+    
+        
+    
+        
+    }
+    .knapper button{
+        
+        background-color: #89aab6;
+        color: #ffffff;
+        border: none;
+        border-radius: 4px;
+        
+    }
+    
+
+}
+
+
 .produktinfo button:hover{
     background-color: #69848e;
 }

@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style/InfoProdukt.css">
+    <link href="https://use.fontawesome.com/releases/v5.0.1/css/all.css" rel="stylesheet">
+
 </head>
-<body onload="generer()">
+<body onload=" sjekk_kurv(); generer()">
     <img class="banner" src="https://lumenia.no/images/uploads/skjermbilde-2024-10-07-112208.png" alt="lumenia">
     <div class="navbar">
         <a href="index.html"><nav>Butikk</nav></a>
@@ -14,21 +16,31 @@
         <a href="studieteknikk.html"><nav>studieteknikk</nav></a>
         <a href=""><nav>sponsorside</nav></a>
         <a href=""><nav>om oss</nav></a>
-        <a href="Handlekurv.html"><nav>handlekurv</nav></a>
+        
+            <a href="Handlekurv.html"><nav>Handlekurv <i id="antall_i_kurv" class="fa badge fa-lg" data-value="0">&#xf07a;</i></nav></a>
+          
+          
         
         </div>
     <div class="produktinfo">
-        <img id="BildeId" src="https://shop10492.sfstatic.io/upload_dir/shop/_thumbs/7ca94376ee4b7b30c3e57c762bb56524_eec41d20-6106-4d9b-be30-02f57897c166.w1200.jpg" alt="Forside Kompendium 1" alt="Produktnavn" class="product-image">
-            <div>
+        <div>
+            <img id="BildeId" src="https://shop10492.sfstatic.io/upload_dir/shop/_thumbs/7ca94376ee4b7b30c3e57c762bb56524_eec41d20-6106-4d9b-be30-02f57897c166.w1200.jpg" alt="Forside Kompendium 1" alt="Produktnavn" class="product-image">
+            <div class="knapper">
+               
+                <br>
+                <button>Kjøp mer</button>
+                <br>
+                <button>gå til handlekurv</button>
+            </div>
+        </div>
+        <div>
             <h2 id="title">blabla</h2>
             <h3 id="pris"></h3>
             <p id="merinfo">dette er Kompendium på Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam, soluta.</p>
-            <div>
-            <button onclick="LeggIKurven()">legg i handlekurv</button>
-            <button>Kjøp mer</button>
-            <button>gå til handlekurv</button>
+            <button onclick = " LeggIKurven(); sjekk_kurv();">legg i handlekurv  </button>
+            
 
-        </div>
+        
     </div>
     </div>
     <script src="scripts/info.js">
@@ -37,6 +49,10 @@
     <script src="scripts/leggIHandlekurv.js">
 
     </script>
+     <script src="scripts/antallProdukt.js">
+
+     </script>
+ 
 
     
 </body>

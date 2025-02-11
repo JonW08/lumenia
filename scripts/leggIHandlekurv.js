@@ -19,9 +19,12 @@ function LeggIKurven() {
       
         // Lagre den oppdaterte handlekurven i localStorage
         localStorage.setItem('cart', JSON.stringify(cart));
+        
+        //alert(`${produktnavn} er lagt i handlekurven!`);
+        
       
-        alert(`${produktnavn} er lagt i handlekurven!`);
-      
-      
+        
 
 }
+
+
