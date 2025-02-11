@@ -59,10 +59,27 @@ a:hover{
 #fagoversikt {
    margin-inline: 20%;
 }
+@media (max-width: 400px) {
+    #fagoversikt {
+        margin-inline: 10% ;
+    }
+}
+
+
 .grid {
     display: grid;
+    
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    align-items: center;
     gap: 20px;
+}
+@media (max-width: 400px) {
+    .grid {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 50px;
+    }
 }
 
 .card {
