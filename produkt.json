@@ -20,29 +20,25 @@
         "price": "199"
     },
     {
-        "name": "Fysikk",
+        "name": "bok1",
         "description": "TFY4104 / TFY4107",
         "image": "https://shop10492.sfstatic.io/upload_dir/shop/_thumbs/7ca94376ee4b7b30c3e57c762bb56524_eec41d20-6106-4d9b-be30-02f57897c166.w1200.jpg",
         "price": "199"
     },
     {
-        "name": "norsk",
+        "name": "bok2",
         "description": "TFY4104 / TFY4107",
         "image": "https://shop10492.sfstatic.io/upload_dir/shop/_thumbs/7ca94376ee4b7b30c3e57c762bb56524_eec41d20-6106-4d9b-be30-02f57897c166.w1200.jpg",
         "price": "199"
     },
     {
-        "name": "Mattemarid",
+        "name": "bok3",
         "description": "TFY4104 / TFY4107",
         "image": "https://shop10492.sfstatic.io/upload_dir/shop/_thumbs/7ca94376ee4b7b30c3e57c762bb56524_eec41d20-6106-4d9b-be30-02f57897c166.w1200.jpg",
-        "price": "199"
-    },
-    {
-        "name": "nie",
-        "description": "TFY4104 / TFY4107",
-        "image": "https://shop10492.sfstatic.io/upload_dir/shop/_thumbs/7ca94376ee4b7b30c3e57c762bb56524_eec41d20-6106-4d9b-be30-02f57897c166.w1200.jpg",
-        "price": "160"
+        "price": "199",
+         "moredescription":"kewjåiwepfjpewåjfpåwefjpwoejf opwjfpowjfpåojwopfjwpojfopwjfpoj  wopfpowjfopwjfpoj wpojfåwjåwfijwj wåpjfåwjfåjwåj "
     }
+    
    
    
 ]

@@ -33,9 +33,20 @@
         <div>
             <h2 id="title">blabla</h2>
             <h3 id="pris"></h3>
-            <p id="merinfo">dette er Kompendium på Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam, soluta.</p>
-        <div class="knapper"> 
-            <button onclick = " LeggIKurven(); sjekk_kurv();">legg i handlekurv  </button>
+            <div class="tekst_boks">
+                <p class="tekst" id="merinfo">dette er Kompendium på Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam, soluta.</p>
+            </div>
+            <div class="knapper"> 
+            <button onclick = " LeggIKurven(); sjekk_kurv(); pop_up()">legg i handlekurv  </button>
+        </div>
+        <div class="pop_up" id="popup">
+            <div class="pop_innhold" id="pop_id"> 
+                <h2>Produkt lagt i handlekurv</h2>
+                    <div class="knapper_flex">
+                        <button  onclick="window.location.href='index.html'">Kjøp mer</button>
+                        <button onclick="window.location.href='handlekurv.html'">gå til handlekurv</button>
+                    </div>
+            </div>
         </div>
 
         
@@ -47,9 +58,10 @@
     <script src="scripts/leggIHandlekurv.js">
 
     </script>
-     <script src="scripts/antallProdukt.js">
+    <script src="scripts/antallProdukt.js">
 
-     </script>
+    </script>
+    <script src="scripts/pop_up.js"> </script>
  
 
     
