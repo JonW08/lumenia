@@ -4,6 +4,7 @@ body {
     padding: 0;
     
     background-color: #89aab6;
+    
 }
 .banner{
     width: 80%;
@@ -17,7 +18,7 @@ body {
     
     background-color: #ffffff;
     color: #000000;
-    
+    font-size: clamp(.5rem, 2vw, 1rem);
     margin-top: -4px;
     box-shadow: 2px 3px 10px #69848e;
 
@@ -54,8 +55,8 @@ a:hover{
     background-color: #ffffff;
     box-shadow: 2px 3px 10px #69848e;
     padding: 10px;
-    width: 60%;
-    margin-inline: 20%;
+    font-size: clamp(.1rem, 1.5vw, 2rem);
+    margin-inline: 10%;
     border-radius: 4px;
 }
 
@@ -83,8 +84,8 @@ a:hover{
 
 }
 .produktinfo img{
-   width: 300px;
-   height: 400px;
+    width:clamp(50px, 30vw, 600px);
+    height: auto;
    
 }
 .knapper{
@@ -104,7 +105,7 @@ a:hover{
     border-radius: 4px;
     
 }
-
+/*
 @media (max-width: 768px) {
     .produktinfo {
         font-size: 8px;
@@ -135,7 +136,7 @@ a:hover{
     
 
 }
-
+*/
 
 .produktinfo button:hover{
     background-color: #69848e;
