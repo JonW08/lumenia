@@ -27,13 +27,14 @@ function generer(products) {
 
     function getProduct() {
         const KvaProduct = products.find(item => item.name === produktnavn);
-        return KvaProduct || { name: "No Fysikk product found." };
+        return KvaProduct || { name: "Ingen produkter funnet." };
     }
 
     const KvaProduct = getProduct();
     document.getElementById("title").innerHTML = KvaProduct.name;
     document.getElementById("pris").innerHTML = KvaProduct.price+"kr";
-    
+    h_bilde(KvaProduct.image) //bli ferdi her
+
     document.getElementById("BildeId").src = KvaProduct.image;
     document.getElementById("merinfo").innerHTML = KvaProduct.moredescription;
     

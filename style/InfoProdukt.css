@@ -151,20 +151,20 @@ a:hover{
 .pop_up{
     display: none;
     position: fixed;
-    z-index: 1;
+    
     left: 0;
     top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
+    width: 100vw;
+    height: 100vh;
+    
     background-color: rgba(0,0,0,0.4);
 }
 .pop_innhold{
     background-color: #fefefe;
-    margin: 15% auto;
+    margin-inline: 20%;
     padding: 20px;
     border: 1px solid #888;
-    width: 80%;
+    margin-top: 10%;
     border-radius: 4px;
    
 }
@@ -194,4 +194,13 @@ a:hover{
     
 }
 
+.fleks_bilde{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#pop_bilde{
+    width: 10%;
+    height: auto;
+}
 
