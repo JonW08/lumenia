@@ -32,6 +32,7 @@ h1{
 
     
 }
+
 a{
     text-decoration: none;
     color: #000000;
@@ -52,57 +53,6 @@ a:hover{
     flex: 1.1;
     cursor: pointer;
     
-}
-.produktinfo{
-    display: block;
-    flex-direction: row;
-    
-    margin-top: 10px;
-    margin-bottom: 10px;
-    background-color: #ffffff;
-    box-shadow: 2px 3px 10px #69848e;
-    padding: 10px;
-    width: 50%;
-    margin-inline: 25%;
-    border-radius: 4px;
-}
-.produktinfo button{
-    background-color: #89aab6;
-    color: #ffffff;
-    border: none;
-    padding: 10px;
-    border-radius: 4px;
-    cursor: pointer;
-    
-}
-.produktinfo button:hover{
-    background-color: #69848e;
-}
-.knapp-rekke{
-    display: flex;
-    gap: 10px;
-    
-    margin-top: 10px;
-}
-.rød{
-    width: 60%;
-    
-}
-.blå{
-    width: 40%;
-    
-}
-.blå button{
-    width: 100%;
-    height: 100%;
-    background-color: #89aab6;
-    
-    
-}
-.rød button{
-    width: 100%;
-    height: 100%;
-    background-color:#ef4141;
 }
 /* handlekurv icon */
 .badge:after{

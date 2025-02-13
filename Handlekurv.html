@@ -5,18 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kasse</title>
   <link rel="stylesheet" href="style/Handlekurv.css">
-  
+  <link href="https://use.fontawesome.com/releases/v5.0.1/css/all.css" rel="stylesheet">
+
 </head>
-<body>
+<body onload="sjekk_kurv()">
   
     <img class="banner" src="https://lumenia.no/images/uploads/skjermbilde-2024-10-07-112208.png" alt="lumenia">
     <div class="navbar">
     <a href="index.html"><nav>Butikk</nav></a>
     <a href="kontakt.html"><nav>kontakt oss</nav></a>
     <a href="studieteknikk.html"><nav>studieteknikk</nav></a>
-    <a href=""><nav>sponsorside</nav></a>
+    <a href="sponsor.html"><nav>sponsorside</nav></a>
     <a href=""><nav>om oss</nav></a>
-    <a href="Handlekurv.html"><nav>handlekurv</nav></a>
+    <a href="Handlekurv.html"><nav> <i id="antall_i_kurv" class="fa badge fa-lg" data-value=0>&#xf07a;</i></nav></a>
     </div>
     <div class="produktinfo">
         <p id="cart">Din handlekurv</p>
@@ -27,11 +28,15 @@
             <button id="tøm" onclick="clearCart()">Tøm handlekurven</button>
           </div>
           <div class="rød"> 
-            <button id="betal">Betal</button>
+            <button id="betal" onclick="window.location.href='checkOut.html'">Betal</button>
           </div>
         </div>
         
     </div>
+    
     <script src="scripts/Handlekurv.js"></script>
+    
+    <script src="scripts/antallProdukt.js"></script>
+    <script src="scripts/leggIHandlekurv.js"></script>
 </body>
 </html>
