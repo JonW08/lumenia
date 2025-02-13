@@ -11,6 +11,7 @@ Rekkefølge på det eg skal arbeide med
 
 Spørsmål:
 
-1. Kor mange kompendier er det. Er det så mange at eg må lage kategorier av fag.
-2. Er det en spesiell font dokke vil at eg skal bruke
-3.
+1. Kor mange kompendier er det? Er det så mange at eg må lage kategorier av fag?
+2. Er det en spesiell font dokke vil at eg skal bruke?
+3. korleis skal sponsorsida se ut?
+
