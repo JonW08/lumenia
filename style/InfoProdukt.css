@@ -164,7 +164,7 @@ a:hover{
     margin-inline: 20%;
     padding: 20px;
     border: 1px solid #888;
-    margin-top: 10%;
+    margin-top: 5%;
     border-radius: 4px;
    
 }
@@ -200,7 +200,7 @@ a:hover{
     justify-content: center;
 }
 #pop_bilde{
-    width: 10%;
+    width: 180px;
     height: auto;
 }
 

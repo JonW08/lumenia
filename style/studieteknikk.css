@@ -25,7 +25,7 @@ h1{
     
     background-color: #ffffff;
     color: #000000;
-    
+    font-size: clamp(.5rem, 2vw, 1rem);
     margin-top: -4px;
     box-shadow: 2px 3px 10px #69848e;
 
@@ -53,8 +53,25 @@ a:hover{
     cursor: pointer;
     
 }
-@media (max-width: 768px) {
-    .navbar {
-        font-size: xx-small;
-    }
+.innhold{
+    display: block;
+    flex-direction: row;
+    
+    margin-top: 20px;
+    
+    background-color: #ffffff;
+    box-shadow: 2px 3px 10px #69848e;
+    padding: 20px;
+    
+    margin-inline: 10%;
+    border-radius: 4px;
+}
+.innhold h2{
+    text-align: center;
+    color: #000000;
+    font-size: 2rem;
+    margin-top: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    
 }

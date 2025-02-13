@@ -33,11 +33,11 @@ function generer(products) {
     const KvaProduct = getProduct();
     document.getElementById("title").innerHTML = KvaProduct.name;
     document.getElementById("pris").innerHTML = KvaProduct.price+"kr";
-    h_bilde(KvaProduct.image) //bli ferdi her
-
+    
     document.getElementById("BildeId").src = KvaProduct.image;
     document.getElementById("merinfo").innerHTML = KvaProduct.moredescription;
-    
+    h_bilde(KvaProduct.image,KvaProduct.name) //bli ferdi her
+
     console.log(fysikkProduct);
 }
 
