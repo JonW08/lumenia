@@ -78,3 +78,25 @@ a:hover{
 .produktinfo button:hover{
     background-color: #69848e;
 }
+.knapp-rekke{
+    display: flex;
+    gap: 10px;
+    
+    margin-top: 10px;
+}
+.rød{
+    width: 60%;
+    
+}
+.blå{
+    width: 40%;
+    
+}
+.blå button{
+    width: 100%;
+    background-color: #89aab6
+}
+.rød button{
+    width: 100%;
+    background-color:#ef4141;
+}
