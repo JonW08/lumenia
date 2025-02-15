@@ -17,7 +17,7 @@ h1{
     margin-top: 0;
     padding-top: 20px;
     padding-bottom: 20px;
-    border-bottom: 2px solid #d2dbe1;
+    
 }
 .navbar {
     display: flex;
@@ -32,7 +32,6 @@ h1{
 
     
 }
-
 a{
     text-decoration: none;
     color: #000000;
@@ -54,6 +53,53 @@ a:hover{
     cursor: pointer;
     
 }
+
+
+.innhold{
+    margin-inline: 10%;
+    background-color: #fff;
+    padding-inline: 10%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    box-shadow: 2px 3px 10px #69848e;
+    border-radius: 3px;
+    margin-right: 40px;
+    text-align: justify;
+    
+    
+}
+.innhold p{
+    text-align: center;
+    
+}
+
+.block img{
+    width:100%;
+}
+.block button{
+    background-color: #ef4141;
+    color: #fff;
+    border: none;
+    width: 100%;
+    height: 50px;
+    margin-top: 10px;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 5px;
+    transition: .2s;
+}
+.block button:hover{
+    background-color: #146f91;
+    color: #fff;
+    border: none;
+    width: 100%;
+    height: 50px;
+    margin-top: 10px;
+    cursor: pointer;
+    
+}
+
+
 
 
 /* handlekurv icon */
