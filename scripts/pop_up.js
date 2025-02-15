@@ -15,3 +15,10 @@ function pop_up() {
     Innhold.style.display = "block";
 
 }
+function pop_and() {
+    var popup = document.getElementById("popup");
+    var Innhold = document.getElementById("popup-id");
+    popup.style.display = "block";
+    Innhold.style.display = "block";
+
+}

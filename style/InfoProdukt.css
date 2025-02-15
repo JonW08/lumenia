@@ -107,38 +107,7 @@ a:hover{
     border-radius: 4px;
     
 }
-/*
-@media (max-width: 768px) {
-    .produktinfo {
-        font-size: 8px;
-    }
-    .produktinfo img{
-        width: 150px;
-        height: 200px;
-        
-     }
-     .produktinfo{
-        display: flex;
-        flex-direction: row;
-        gap:30px;
-        margin-top: 10px;
-        margin-bottom: 10px;
-        background-color: #ffffff;
-        box-shadow: 2px 3px 10px #69848e;
-        padding: 10px;
-        width: 85%;
-        margin-inline: 5%;
-        border-radius: 4px;
-    }
-    .navbar{
-        font-size: xx-small;
-    }
-    
-    
-    
 
-}
-*/
 
 .produktinfo button:hover{
     background-color: #69848e;

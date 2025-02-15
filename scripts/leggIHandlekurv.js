@@ -1,8 +1,15 @@
-function LeggIKurven() {
-    
-        const parsedUrl = new URL(window.location.href);
-        const produktnavn = parsedUrl.searchParams.get("produkt");
-        const pris = parsedUrl.searchParams.get("pris");
+function LeggIKurven(Er_and) {
+        
+            let parsedUrl = new URL(window.location.href);
+            let produktnavn = parsedUrl.searchParams.get("produkt");
+            let pris = parsedUrl.searchParams.get("pris"); 
+        if (Er_and == true) {
+            produktnavn = "Badeand";
+            pris = 89;
+        }
+        
+
+        
         
     
         // Hent eksisterende handlekurv fra localStorage eller opprett en ny
@@ -21,10 +28,10 @@ function LeggIKurven() {
         localStorage.setItem('cart', JSON.stringify(cart));
         
         //alert(`${produktnavn} er lagt i handlekurven!`);
-        
-      
-        
-
 }
+
+
+
+
 
 

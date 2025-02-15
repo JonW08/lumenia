@@ -28,11 +28,26 @@
                     <p>100kr</p>
                     <img src="https://www.pngall.com/wp-content/uploads/11/Rubber-Duck-PNG-HD-Image.png">
                     
-                    <button>Legg i handlekurv</button>
+                    <button onclick = "LeggIKurven(true); pop_up()">legg i handlekurv  </button>
                 </div>
             </div>
                 <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo deserunt nisi eaque architecto voluptatum doloremque magni dolore non mollitia quia itaque beatae sint, cum soluta nulla exercitationem cupiditate ab labore dolorem quae optio necessitatibus quod qui? Adipisci eos, illo dicta ea incidunt officiis accusamus similique illum porro ullam sed quo, eum unde labore modi omnis, odio sint possimus fugiat cumque amet consequatur blanditiis. Numquam, voluptate eos eligendi nam totam nesciunt atque doloribus unde enim cumque ex obcaecati, laboriosam rem aperiam aliquam delectus ullam odio illum distinctio. Aspernatur rerum, a commodi in, nam quisquam placeat possimus cum quidem autem dolorum? Facere?Rubber Duck Debugging er en uvanlig, men svært effektiv teknikk for feilsøking. Metoden går ut på at en programmerer forklarer koden sin høyt til en gummiand eller en annen livløs gjenstand. Ved å gå gjennom koden linje for linje og formulere problemet tydelig, oppdager man ofte logiske feil eller misforståelser i egen tenkning. Teknikken fungerer fordi den tvinger hjernen til å strukturere tanker og stille spørsmål ved egne antakelser. Mange opplever at de finner løsningen selv før de engang har fullført forklaringen. Dette gjør at man kan løse problemer mer selvstendig, samtidig som man trener opp evnen til logisk resonnering. Selv om konseptet kan virke litt komisk, er det en metode som brukes av mange erfarne utviklere nettopp fordi den fungerer. Neste gang du sitter fast, kan det være verdt å prøve – gummianda dømmer deg ikke, den bare lytter.</p>
-            
+                
+                
+                <div class="pop_up" id="popup">
+
+                    <div class="pop_innhold" id="pop_id">
+                         
+                        <h2 id="pop_h2">Produkt lagt i handlekurv</h2>
+                            <div class="fleks_bilde">
+                                <img class="popup_bilde" id="pop_bilde" src="https://www.pngall.com/wp-content/uploads/11/Rubber-Duck-PNG-HD-Image.png" alt="bilde av produkt">
+                            </div>
+                            <div class="knapper_flex">
+                                <button  onclick="window.location.href='studieteknikk.html'">les mer</button>
+                                <button onclick="window.location.href='Handlekurv.html'">gå til handlekurv</button>
+                            </div>
+                    </div>
+                </div>
             
                 
             
@@ -43,6 +58,17 @@
 
     <script src="scripts/antallProdukt.js">
     </script>
+    <script src="scripts/info.js">
+
+    </script>
+    <script src="scripts/leggIHandlekurv.js">
+
+    </script>
+    <script src="scripts/antallProdukt.js">
+
+    </script>
+    <script src="scripts/pop_up.js"> </script>
+ 
     
     
 </body>
