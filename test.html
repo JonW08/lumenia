@@ -1,101 +1,38 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f9f9f9;
-        }
-        .container {
-            width: 90%;
-            max-width: 800px;
-            margin: 40px auto;
-            background: white;
-            padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
-        }
-        h2 {
-            text-align: center;
-        }
-        .contact-info {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-        .contact-info p {
-            margin: 5px 0;
-        }
-        .contact-form {
-            display: flex;
-            flex-direction: column;
-        }
-        .contact-form label {
-            margin-bottom: 5px;
-            font-weight: bold;
-        }
-        .contact-form input, 
-        .contact-form textarea {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 15px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-        .contact-form button {
-            background: #28a745;
-            color: white;
-            padding: 10px;
-            border: none;
-            cursor: pointer;
-            font-size: 16px;
-        }
-        .contact-form button:hover {
-            background: #218838;
-        }
-        .map {
-            margin-top: 20px;
-            text-align: center;
-        }
-        iframe {
-            width: 100%;
-            height: 300px;
-            border: none;
-            border-radius: 8px;
-        }
-    </style>
-</head>
-<body>
-
-<div class="container">
-    <h2>Contact Us</h2>
-    
-    <div class="contact-info">
-        <p><strong>Email:</strong> contact@example.com</p>
-        <p><strong>Phone:</strong> +1 (123) 456-7890</p>
-        <p><strong>Address:</strong> 123 Main Street, New York, NY</p>
-    </div>
-
-    <form class="contact-form">
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name" required>
-        
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" required>
-
-        <label for="message">Message</label>
-        <textarea id="message" name="message" rows="5" required></textarea>
-
-        <button type="submit">Send Message</button>
-    </form>
-
-    
+<div class="grid-container">
+    <div class="box">Floating Div</div>
+    <p class="text">
+        This Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit necessitatibus accusantium nesciunt sunt tenetur mollitia ut expedita odit, labore facere dignissimos modi delectus soluta quam nemo quia. A nisi commodi laboriosam? Modi eum expedita corrupti ex voluptas ducimus ipsam facere quaerat nulla dolore natus ad harum, nihil numquam nobis commodi quasi temporibus quibusdam tenetur deserunt obcaecati. Nisi repellat eius ipsam aliquam doloremque quod id mollitia, delectus libero nulla explicabo temporibus voluptas repellendus. Nihil consectetur molestiae tempora saepe architecto, libero alias id expedita, fuga ratione tenetur aspernatur minima. Impedit cupiditate numquam explicabo, cum, magni voluptatem non fugiat laudantium maxime, consequatur ipsam! is some text that wraps around the div. Once it moves below, it takes the entire width.
+    </p>
 </div>
 
-</body>
-</html>
+<style>
+    .grid-container {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        gap: 10px;
+        max-width: 600px;
+    }
+
+    .box {
+        width: 150px;
+        height: 150px;
+        background-color: lightcoral;
+        text-align: center;
+        line-height: 150px;
+        font-weight: bold;
+    }
+
+    .text {
+        grid-column: span 1;
+    }
+
+    @media (max-width: 500px) {
+        .grid-container {
+            grid-template-columns: 1fr; /* Stack on smaller screens */
+        }
+        .text {
+            grid-column: span 1;
+        }
+    }
+</style>
 
