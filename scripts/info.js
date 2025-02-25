@@ -15,7 +15,7 @@ async function fetchProducts() {
         console.error('Feil ved henting av produkter:', error);
     }
 }
-
+let link = ""
 function generer(products) {
     products.forEach(product => {
         const productCard = document.createElement('div');
@@ -37,7 +37,7 @@ function generer(products) {
     document.getElementById("BildeId").src = KvaProduct.image;
     document.getElementById("merinfo").innerHTML = KvaProduct.moredescription;
     h_bilde(KvaProduct.image,KvaProduct.name) //bli ferdi her
-
+    link = KvaProduct.stripe_link
     console.log(fysikkProduct);
 }
 
@@ -46,3 +46,10 @@ fetchProducts().then(products => {
         generer(products);
     }
 });
+
+function hent_link(){
+    return link
+
+    
+    
+}

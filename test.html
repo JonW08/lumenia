@@ -1,38 +1,14 @@
-<div class="grid-container">
-    <div class="box">Floating Div</div>
-    <p class="text">
-        This Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit necessitatibus accusantium nesciunt sunt tenetur mollitia ut expedita odit, labore facere dignissimos modi delectus soluta quam nemo quia. A nisi commodi laboriosam? Modi eum expedita corrupti ex voluptas ducimus ipsam facere quaerat nulla dolore natus ad harum, nihil numquam nobis commodi quasi temporibus quibusdam tenetur deserunt obcaecati. Nisi repellat eius ipsam aliquam doloremque quod id mollitia, delectus libero nulla explicabo temporibus voluptas repellendus. Nihil consectetur molestiae tempora saepe architecto, libero alias id expedita, fuga ratione tenetur aspernatur minima. Impedit cupiditate numquam explicabo, cum, magni voluptatem non fugiat laudantium maxime, consequatur ipsam! is some text that wraps around the div. Once it moves below, it takes the entire width.
-    </p>
-</div>
+<a id="checkout-link" href="#">Betal nå</a>
 
-<style>
-    .grid-container {
-        display: grid;
-        grid-template-columns: auto 1fr;
-        gap: 10px;
-        max-width: 600px;
-    }
+<script>
+    // Hent pris fra URL-en (f.eks. ?pris=200)
+    const urlParams = new URLSearchParams(window.location.search);
+    const pris = urlParams.get("pris") || 100; // Standardpris hvis ingen pris er satt
 
-    .box {
-        width: 150px;
-        height: 150px;
-        background-color: lightcoral;
-        text-align: center;
-        line-height: 150px;
-        font-weight: bold;
-    }
+    // Opprett Stripe-lenken med den dynamiske prisen
+    const stripeBaseURL = "https://buy.stripe.com/test_4gw8zT15W2h23ew7st";
+    const checkoutLink = `${stripeBaseURL}?prefilled_price=${pris}`;
 
-    .text {
-        grid-column: span 1;
-    }
-
-    @media (max-width: 500px) {
-        .grid-container {
-            grid-template-columns: 1fr; /* Stack on smaller screens */
-        }
-        .text {
-            grid-column: span 1;
-        }
-    }
-</style>
-
+    // Oppdater betalingsknappen
+    document.getElementById("checkout-link").href = checkoutLink;
+</script>

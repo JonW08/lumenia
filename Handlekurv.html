@@ -29,11 +29,29 @@
             <button id="tøm" onclick="clearCart()">Tøm handlekurven</button>
           </div>
           <div class="rød"> 
-            <button id="betal" onclick="window.location.href='checkOut.html'">Betal</button>
+            <button id="betal" onclick='window.location.href="https://buy.stripe.com/test_cN2dUdbKA6xieXeaEE"'>Betal</button>
           </div>
         </div>
         
     </div>
+
+    <button onclick="checkout(50)">Pay $50</button>
+
+<script>
+async function checkout(amount) {
+    const response = await fetch('http://localhost:3000/create-checkout-session', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ price: amount })
+    });
+
+    const data = await response.json();
+    window.location.href = data.url;  // Redirect to Stripe Checkout
+}
+</script>
+
+
+
     
     <script src="scripts/Handlekurv.js"></script>
     

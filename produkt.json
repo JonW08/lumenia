@@ -2,16 +2,19 @@
     {
         "name": "Fysikk",
         "description": "TFY4104 / TFY4107",
-        "image": "https://shop10492.sfstatic.io/upload_dir/shop/_thumbs/7ca94376ee4b7b30c3e57c762bb56524_eec41d20-6106-4d9b-be30-02f57897c166.w1200.jpg",
+        "image": "https://th.bing.com/th/id/OIP.nJao3YN4ox61yxzvJgZg4QHaHa?w=202&h=202&c=7&r=0&o=5&dpr=1.5&pid=1.7",
         "price": "145",
-        "moredescription": "Fysikkkompendium til salgs! Dette er den ultimate guiden for deg som ønsker å mestre fysikk, enten du er student eller bare interessert i å forstå naturens lover. Kompendiet dekker alt fra grunnleggende mekanikk og termodynamikk til avansert kvantefysikk. Det er skrevet på en enkel og lettfattelig måte, med eksempler, illustrasjoner og oppgaver som gjør læringen mer engasjerende. Perfekt for eksamensforberedelser eller som en oppslagsbok! Kjøpere roser innholdets kvalitet og hvor effektivt det gjør vanskelige temaer forståelige. Ta kontakt for pris og mer informasjon – dette er investeringen som tar fysikkforståelsen din til et nytt nivå!"
+        "moredescription": "Fysikkkompendium til salgs! Dette er den ultimate guiden for deg som ønsker å mestre fysikk, enten du er student eller bare interessert i å forstå naturens lover. Kompendiet dekker alt fra grunnleggende mekanikk og termodynamikk til avansert kvantefysikk. Det er skrevet på en enkel og lettfattelig måte, med eksempler, illustrasjoner og oppgaver som gjør læringen mer engasjerende. Perfekt for eksamensforberedelser eller som en oppslagsbok! Kjøpere roser innholdets kvalitet og hvor effektivt det gjør vanskelige temaer forståelige. Ta kontakt for pris og mer informasjon – dette er investeringen som tar fysikkforståelsen din til et nytt nivå!",
+        "stripe_link": "https://buy.stripe.com/test_4gw8zT15W2h23ew7st"
     },
     {
         "name": "Matte",
         "description": "TFY4104 / TFY4107",
         "image": "https://shop63703.sfstatic.io/upload_dir/shop/_thumbs/9788759324790.w1200.png",
-        "price": "199",
-        "moredescription": "Mattekompendium til salgs! Dette kompendiet er din perfekte følgesvenn for å mestre matematikk, uansett nivå. Det dekker alt fra grunnleggende algebra og geometri til mer avanserte temaer som kalkulus og statistikk. Skrevet på en klar og strukturert måte, med steg-for-steg forklaringer og løsningsforslag til eksempler og oppgaver. Enten du forbereder deg til eksamen, trenger en oppfriskning, eller bare ønsker å forbedre ferdighetene dine, er dette kompendiet for deg. Mange fornøyde kjøpere skryter av hvor lett det er å forstå selv de vanskeligste temaene. Ta kontakt for pris – lær matte med selvtillit!"
+        "price": "100",
+        "moredescription": "Mattekompendium til salgs! Dette kompendiet er din perfekte følgesvenn for å mestre matematikk, uansett nivå. Det dekker alt fra grunnleggende algebra og geometri til mer avanserte temaer som kalkulus og statistikk. Skrevet på en klar og strukturert måte, med steg-for-steg forklaringer og løsningsforslag til eksempler og oppgaver. Enten du forbereder deg til eksamen, trenger en oppfriskning, eller bare ønsker å forbedre ferdighetene dine, er dette kompendiet for deg. Mange fornøyde kjøpere skryter av hvor lett det er å forstå selv de vanskeligste temaene. Ta kontakt for pris – lær matte med selvtillit!",
+        "stripe_link": "https://buy.stripe.com/test_dR6dUdg0Q2h2dTabIK"
+    
     },
     {
         "name": "Fysikk",
