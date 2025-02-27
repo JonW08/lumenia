@@ -37,7 +37,7 @@ function generer(products) {
     document.getElementById("BildeId").src = KvaProduct.image;
     document.getElementById("merinfo").innerHTML = KvaProduct.moredescription;
     h_bilde(KvaProduct.image,KvaProduct.name) //bli ferdi her
-    
+    link = KvaProduct.stripe_link
     console.log(fysikkProduct);
 }
 
