@@ -1,14 +1,13 @@
-<a id="checkout-link" href="#">Betal nå</a>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="https://buy.stripe.com/test_4gw8zT15W2h23ew7st">test_a</a>
+    <button onclick="window.location.href='https://buy.stripe.com/test_4gw8zT15W2h23ew7st'">test_b</button>
 
-<script>
-    // Hent pris fra URL-en (f.eks. ?pris=200)
-    const urlParams = new URLSearchParams(window.location.search);
-    const pris = urlParams.get("pris") || 100; // Standardpris hvis ingen pris er satt
-
-    // Opprett Stripe-lenken med den dynamiske prisen
-    const stripeBaseURL = "https://buy.stripe.com/test_4gw8zT15W2h23ew7st";
-    const checkoutLink = `${stripeBaseURL}?prefilled_price=${pris}`;
-
-    // Oppdater betalingsknappen
-    document.getElementById("checkout-link").href = checkoutLink;
-</script>
+</body>
+</html>

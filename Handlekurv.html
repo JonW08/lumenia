@@ -35,20 +35,8 @@
         
     </div>
 
-    <button onclick="checkout(50)">Pay $50</button>
+  
 
-<script>
-async function checkout(amount) {
-    const response = await fetch('http://localhost:3000/create-checkout-session', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ price: amount })
-    });
-
-    const data = await response.json();
-    window.location.href = data.url;  // Redirect to Stripe Checkout
-}
-</script>
 
 
 
