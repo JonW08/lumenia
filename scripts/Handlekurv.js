@@ -21,8 +21,10 @@ function visprodukter() {
     cartDiv.innerHTML = cart.map((item, index) => {
       total += parseFloat(item.pris); // Konverter pris til tall
       return `
-        <div>
-          <p>${item.produktnavn} - ${item.pris} NOK</p>
+        <div class="cart_item">
+          <h2>${item.produktnavn} - ${item.pris} NOK</h2>
+          
+          <a class="kjøp" href=${item.stripe_link} target="_blank" onclick="removeItem(${index})">Kjøp her</a>
           <button onclick="removeItem(${index})">Fjern</button>
         </div>
       `;

@@ -128,3 +128,24 @@ a:hover{
     opacity:0.9;
 
 }
+.cart_item{
+    
+    
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #ffffff;
+    box-shadow: 2px 3px 10px #69848e;
+    padding: 10px;
+    gap: 10px;
+    
+    border-radius: 4px;
+}
+.kjøp{
+    background-color: #ef4141;
+    color: #ffffff;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+
+}

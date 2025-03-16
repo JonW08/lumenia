@@ -51,7 +51,9 @@ a:hover{
     flex-direction: row;
     gap:30px;
     margin-top: 10px;
-    margin-bottom: 10px;
+    
+    margin-bottom: 20px;
+    
     background-color: #ffffff;
     box-shadow: 2px 3px 10px #69848e;
     padding: 10px;
@@ -86,7 +88,7 @@ a:hover{
 
 }
 .produktinfo img{
-    width:clamp(50px, 30vw, 600px);
+    width:clamp(50px, 30vw, 300px);
     height: auto;
    
 }
@@ -169,7 +171,7 @@ a:hover{
     justify-content: center;
 }
 #pop_bilde{
-    width: 180px;
+    width: 100px;
     height: auto;
 }
 

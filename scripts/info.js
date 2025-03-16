@@ -31,13 +31,16 @@ function generer(products) {
     }
 
     const KvaProduct = getProduct();
+   
+    
     link = KvaProduct.stripe_link
     document.getElementById("title").innerHTML = KvaProduct.name;
     document.getElementById("pris").innerHTML = KvaProduct.price+"kr";
-    document.getElementById("betal_knapp").setAttribute("onclick", "window.location.href=" + KvaProduct.stripe_link );
     document.getElementById("BildeId").src = KvaProduct.image;
+    document.getElementById("pop_bilde").src = KvaProduct.image;
     document.getElementById("merinfo").innerHTML = KvaProduct.moredescription;
-    h_bilde(KvaProduct.image,KvaProduct.name) //bli ferdi her
+    //h_bilde(KvaProduct.image,KvaProduct.name)
+
     console.log(link);
     console.log(fysikkProduct);
 }

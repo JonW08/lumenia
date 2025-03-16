@@ -26,7 +26,7 @@ function displayProducts(products) {
         productCard.value = product.name;
         productCard.Id = product.name;
         productCard.innerHTML = `
-            <a href="InfoProdukt.html?produkt=${product.name}&pris=${product.price}">
+            <a href="InfoProdukt.html?produkt=${product.name}&pris=${product.price}&sk=${product.stripe_link}">
             <img src="${product.image}" alt="${product.name}">
             <h3>${product.name}</h3>
             <p>${product.description}</p>
