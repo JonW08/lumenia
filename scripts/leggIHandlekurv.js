@@ -6,7 +6,8 @@ function LeggIKurven(Er_and) {
     let stripe_link = parsedUrl.searchParams.get("sk");
 if (Er_and == true) {
     produktnavn = "Badeand";
-    pris = 89;
+    pris = 100;
+    stripe_link = "https://buy.stripe.com/test_6oE9DX8yo2h25mE7sv";
 }
 
 

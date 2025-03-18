@@ -5,7 +5,7 @@ const bilder = parsedUrl.searchParams.get("bilde");
 
 async function fetchProducts() {
     try {
-        const response = await fetch('produkt.json');
+        const response = await fetch('JsonFiler/produkt.json');
         if (!response.ok) {
             throw new Error('Kunne ikke laste produkter.json');
         }

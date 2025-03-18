@@ -1,29 +1,31 @@
 async function fetchProducts() {
     try {
-        const response = await fetch('JsonFiler/QandA.json');
+        const response = await fetch('JsonFiler/sponsor.json');
         if (!response.ok) {
-            throw new Error('Kunne ikke laste QandA.json');
+            throw new Error('Kunne ikke laste sponsor.json');
         }
         const spørsmål = await response.json();
         generer_QandA(spørsmål); 
     } catch (error) {
-        console.error('Feil ved henting av spørsmål:', error);
+        console.error('Feil ved henting av informasjon', error);
     }
 }
-
+// ignorer at variablene heiter QandA, det er fordi jeg kopierte fra QandA.js, og gadd ikke endre det
 function generer_QandA(spørsmål) { 
-    const QandA_liste = document.getElementById('QandA_id');
+    const sponsor_liste = document.getElementById('sponsor_liste');
 
     spørsmål.forEach(QandA => {
         const QandA_card = document.createElement('div');
         QandA_card.classList.add('card');
 
         QandA_card.innerHTML = `
-            <div class="spørsmål" onclick="vis_svar()">${QandA.spørsmål}</div>
-            <div class="svar">${QandA.svar}</div>
+            <div class="takk" onclick="window.location.href = '${QandA.link}'">
+            <h2>${QandA.Navn}</h2>
+            <img class="bilde_sponsor" src="${QandA.image}" style="width: 80%; height: auto;">
+            </div>
         `;
 
-        QandA_liste.appendChild(QandA_card);
+        sponsor_liste.appendChild(QandA_card);
     });
 }
 fetchProducts();
@@ -40,4 +42,3 @@ function vis_svar() {
     }
 
 }
-
