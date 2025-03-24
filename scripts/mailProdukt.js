@@ -1,16 +1,31 @@
-function send_order(){
-    let list = [];
-    total = 0
-    var email = "jonweider07@gmail.com"
-    let test = 0
-    const cart = JSON.parse(localStorage.getItem('cart')) || [];
+function sendCartEmail() {
+    alert("Sending email...");
     
-    test = cart.map((item, index) => {
-        total += parseFloat(item.pris); // Konverter pris til tall
-            list.push("order:   " + item.produktnavn + ": " + item.pris + "kr" + "-----------");
-            document.getElementById("test").innerText = list
+    let cart;
+    try {
+        cart = JSON.parse(localStorage.getItem('cart')) || [];
+    } catch (error) {
+        console.error("Error parsing cart:", error);
+        return;
+    }
 
-        })
-    window.location.href = "mailto:" + email + "?subject=Order&body=" + list + "Total: " + total + "kr";
+    if (cart.length === 0) {
+        alert("Your cart is empty!");
+        return;
+    }
+        
+    // Format the cart items into a readable list
+    let emailBody = "Dette er min ordre:\n\n";
+    cart.forEach((item, index) => {
+        emailBody += `${index + 1}. ${item.produktnavn} - ${item.pris} NOK\n`;
+    });
+
+    // Encode for mailto
+    let subject = encodeURIComponent("My Cart Order");
+    let body = encodeURIComponent(emailBody);
+    let email = "your-email@example.com";  // Change this to your email or leave empty for user input
+
+    // Open mail client
+    window.location.href = `mailto:${email}?subject=${subject}&body=${body}`;
     
 }

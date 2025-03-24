@@ -19,9 +19,11 @@ function generer_QandA(spørsmål) {
         QandA_card.classList.add('card');
 
         QandA_card.innerHTML = `
-            <div class="kontaktmail">
-            <a href="mailto:${QandA.mail}">${QandA.navn}</a>
-            <img src="${QandA.bilde}" style="width: 80px; height: auto;">
+            <div onclick="window.location.href='mailto:${QandA.mail}'"class="kontaktmail">
+            <div class="sentrer">
+                <h2>${QandA.navn}</h2>
+                <img src="${QandA.bilde}" style="width: 80px; height: auto;">
+            </div>
             </div>
         `;
 

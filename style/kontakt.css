@@ -109,9 +109,20 @@ a:hover{
     border-radius: 10px;
     margin: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    transition: .5s;
+    transition: .7s;
 
-    
+    align-items: center;
+    justify-content: center;
+}
+.kontaktmail:hover{
+    background-color: #d2dbe1;
+    cursor: pointer;
+
+}
+.sentrert{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
 }
 footer{
    text-align: center;

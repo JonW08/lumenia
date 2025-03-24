@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Lumenia</title>
     <link rel="stylesheet" href="style/omOss.css">
     <link href="https://use.fontawesome.com/releases/v5.0.1/css/all.css" rel="stylesheet">
     <link rel="icon" href="Bilder/Fanelogo.ico" type="image/x-icon">
 </head>
-<body onload="sjekk_kurv()">
+<body onload="sjekk_kurv(),LoadTekst('tekst/OmOss.txt')">
     <img class="banner" src="https://lumenia.no/images/uploads/skjermbilde-2024-10-07-112208.png" alt="lumenia">
     <div class="navbar">
     <a href="index.html"><nav>Butikk</nav></a>
@@ -21,7 +21,7 @@
 
     <div class="innhold">
         <h1>Kven er lumenia?</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos maiores quidem perferendis, repudiandae sapiente nam quod unde ullam labore incidunt beatae id nihil itaque sed in accusamus? Non temporibus enim incidunt. Eaque quod fuga corrupti omnis culpa consequuntur, laudantium magni aperiam recusandae iste in assumenda repellendus quam, ut sint sequi ipsum possimus, non modi vel expedita saepe odit. Asperiores necessitatibus quibusdam aspernatur perferendis esse sit nihil! Nam non pariatur accusamus, ipsam doloribus perferendis odio repellat laudantium consequatur consectetur ut repellendus? Harum quaerat non ad expedita eaque consequatur ex a veniam ratione blanditiis quae, suscipit optio debitis consequuntur nostrum aspernatur reiciendis!</p>
+        <p id="content">loading...</p>
         
         <h2>Q&A</h2>
         <div class="qanda" id="QandA_id">
@@ -34,7 +34,7 @@
     </div>
 
 
-
+<script src="scripts/tekst.js"> </script>
 <script src="scripts/QandA.js">
         
 </script>

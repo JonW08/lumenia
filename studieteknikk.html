@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Lumenia</title>
     <link rel="stylesheet" href="style/studieteknikk.css">
     <link href="https://use.fontawesome.com/releases/v5.0.1/css/all.css" rel="stylesheet">
     <link rel="icon" href="Bilder/Fanelogo.ico" type="image/x-icon">
 </head>
-<body onload="sjekk_kurv()">
+<body onload="sjekk_kurv(), LoadTekst('tekst/studieteknikk.txt')">
     <img class="banner" src="https://lumenia.no/images/uploads/skjermbilde-2024-10-07-112208.png" alt="lumenia">
     <div class="navbar">
     <a href="index.html"><nav>Butikk</nav></a>
@@ -31,8 +31,7 @@
                     <button onclick = "LeggIKurven(true); pop_up()">legg i handlekurv  </button>
                 </div>
             </div>
-                <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo deserunt nisi eaque architecto voluptatum doloremque magni dolore non mollitia quia itaque beatae sint, cum soluta nulla exercitationem cupiditate ab labore dolorem quae optio necessitatibus quod qui? Adipisci eos, illo dicta ea incidunt officiis accusamus similique illum porro ullam sed quo, eum unde labore modi omnis, odio sint possimus fugiat cumque amet consequatur blanditiis. Numquam, voluptate eos eligendi nam totam nesciunt atque doloribus unde enim cumque ex obcaecati, laboriosam rem aperiam aliquam delectus ullam odio illum distinctio. Aspernatur rerum, a commodi in, nam quisquam placeat possimus cum quidem autem dolorum? Facere?Rubber Duck Debugging er en uvanlig, men svært effektiv teknikk for feilsøking. Metoden går ut på at en programmerer forklarer koden sin høyt til en gummiand eller en annen livløs gjenstand. Ved å gå gjennom koden linje for linje og formulere problemet tydelig, oppdager man ofte logiske feil eller misforståelser i egen tenkning. Teknikken fungerer fordi den tvinger hjernen til å strukturere tanker og stille spørsmål ved egne antakelser. Mange opplever at de finner løsningen selv før de engang har fullført forklaringen. Dette gjør at man kan løse problemer mer selvstendig, samtidig som man trener opp evnen til logisk resonnering. Selv om konseptet kan virke litt komisk, er det en metode som brukes av mange erfarne utviklere nettopp fordi den fungerer. Neste gang du sitter fast, kan det være verdt å prøve – gummianda dømmer deg ikke, den bare lytter.</p>
-                
+                <p id="content">Loading...</p>
                 
                 <div class="pop_up" id="popup">
 
@@ -51,11 +50,14 @@
             
                 
             
-        </div>     
+        </div> 
+        <footer>lumenia.no</footer>    
     </div>
     
     
-
+    <script src="/scripts/tekst.js">
+        
+    </script>
     <script src="scripts/antallProdukt.js">
     </script>
     <script src="scripts/info.js">
