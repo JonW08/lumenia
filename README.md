@@ -20,16 +20,16 @@ Lumenia
 **Korleis legge til spørsmål og svar til QandA:**
 
 1. gå inn på folderen JsonFiler
-2. gp inn på fila QandA.json
+2. gå inn på fila QandA.json
 3. legg til et objekt spørsmål og svar
 
 ---
 
 **Korleis skrive tekst for om oss side og studieteknikk side:**
 
-1. åpne tekst folder
-2. velg fil som har navnet på det du vil skrive inn
-3. skriv
+1. gå inn på folderen JsonFiler
+2. gå inn på fila tekst.json
+3. skriv inn tekst der det står tekst
 
 Du kan bytte ut stripe lenka med Vipps chekoutlink om du vil ha vipps betaling istedet. Det er bare å legge til linken der stripelinken egentlig skulle være
 
