@@ -34,7 +34,7 @@ Lumenia
 Du kan bytte ut stripe lenka med Vipps chekoutlink om du vil ha vipps betaling istedet. Det er bare å legge til linken der stripelinken egentlig skulle være
 
 Sei ifra om dokke vil ha forandringer eller trenger hjelp til å legge til kompendier eller spørsmål og svar til QandA
-
+**Last Ned ZipFIl Her:**
 [![Download ZIP](https://img.shields.io/badge/Download-ZIP-green)](https://github.com/JonW08/Lumenia/archive/refs/heads/main.zip)
 
 
