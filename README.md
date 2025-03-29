@@ -35,8 +35,6 @@ Du kan bytte ut stripe lenka med Vipps chekoutlink om du vil ha vipps betaling i
 
 Sei ifra om dokke vil ha forandringer eller trenger hjelp til å legge til kompendier eller spørsmål og svar til QandA
 
-```bash
-git clone https://github.com/JonW08/Lumenia.git
-cd yourrepo
-pip install -r requirements.txt
+[![Download ZIP](https://img.shields.io/badge/Download-ZIP-green)](https://github.com/JonW08/Lumenia.zip)
+
 
