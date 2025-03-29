@@ -11,6 +11,6 @@ function HvilkenTekst(name) {
         })
         .catch(error => console.error('Error fetching JSON:', error));
 }
-
+ // Example usage: update content with "lorem"
 // Example usage: update content with "lorem"
 
