@@ -10,8 +10,10 @@ async function fetchProducts() {
         console.error('Feil ved henting av informasjon', error);
     }
 }
+fetchProducts();
 // ignorer at variablene heiter QandA, det er fordi jeg kopierte fra QandA.js, og gadd ikke endre det
 function generer_QandA(spørsmål) { 
+    
     const sponsor_liste = document.getElementById('sponsor_liste');
 
     spørsmål.forEach(QandA => {
@@ -28,7 +30,7 @@ function generer_QandA(spørsmål) {
         sponsor_liste.appendChild(QandA_card);
     });
 }
-fetchProducts();
+
 
 function vis_svar() {
     
