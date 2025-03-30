@@ -13,7 +13,7 @@ async function fetchProducts() {
 fetchProducts();
 // ignorer at variablene heiter QandA, det er fordi jeg kopierte fra QandA.js, og gadd ikke endre det
 function generer_QandA(spørsmål) { 
-    
+    alert("yo")
     const sponsor_liste = document.getElementById('sponsor_liste');
 
     spørsmål.forEach(QandA => {
