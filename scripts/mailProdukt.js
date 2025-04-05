@@ -1,5 +1,5 @@
 function sendCartEmail() {
-    alert("Sending email...");
+    
     
     let cart;
     try {
