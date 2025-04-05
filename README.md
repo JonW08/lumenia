@@ -41,7 +41,7 @@ Lumenia
 ----
 **Korleis legge til sponsor:**
 1. gå inn på folderen JsonFiler
-2. gå inn op fila mail.json
+2. gå inn op fila sponsor.json
 3. legg in bilde i bildefolderen
 4. og link bilda med Bilder/"bildenavn"
 5. og legg in nettstedadresse til sponsoren dokkar
